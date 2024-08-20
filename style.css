@@ -1,4 +1,4 @@
-/* Resetting some basic styles to prevent overflow */
+
 * {
     box-sizing: border-box;
     margin: 0 auto;
@@ -41,12 +41,12 @@
 
 html, body {
     width: 100%;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden; 
 }
 
 /* Basic Styling */
 body {
-    max-width: 100%; /* Changed from 1140px to prevent overflow */
+    max-width: 100%; 
     margin: 0 auto;
     background-color: black;
     color: white;
@@ -58,7 +58,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 50px; /* Reduced margin for smaller screens */
+    margin: 20px 50px; 
 }
 
 nav ul {
@@ -68,7 +68,7 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 20px; /* Adjusted margin to avoid overflow */
+    margin-right: 20px; 
 }
 
 nav ul a {
@@ -154,7 +154,7 @@ nav ul a {
 .run {
     background-color: #222222;
     border-radius: 2rem;
-    max-width: 100%; /* Changed to avoid overflow */
+    max-width: 100%; 
     margin: 0 auto;
     padding: 2em;
     display: flex;
@@ -178,14 +178,14 @@ nav ul a {
 }
 
 .side {
-    max-width: 100%; /* Ensure it doesn't exceed the viewport */
-    padding: 0 1rem; /* Adjust padding to avoid overflow */
+    max-width: 100%; 
+    padding: 0 1rem; 
 }
 
 /* Simple Section */
 .simple {
     text-align: center;
-    padding: 5em 1em; /* Added padding for small screens */
+    padding: 5em 1em; 
 }
 .hum{
     padding-bottom: 1.5rem;
@@ -460,7 +460,8 @@ form input{
 .contactus{
     height: 15rem;
     width: 100%;
-    background-color: #393939;
+    background-color:#191919;
+    margin-bottom: 1rem;
     
     
 }
