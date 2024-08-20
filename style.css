@@ -1,0 +1,343 @@
+/* Resetting some basic styles to prevent overflow */
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    /* box-sizing: border-box;
+    margin: 0;
+    padding: 0; */
+
+}
+#B{
+    /* padding-left:1rem; */
+    font-size: 2.5rem;
+}
+
+
+/* font */
+.inter-normal{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+  }
+  
+  .tangerine-regular {
+      font-family: "Tangerine", cursive;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 4rem;
+    }
+    
+    .tangerine-bold {
+      font-family: "Tangerine", cursive;
+      font-weight: 700;
+      font-style: normal;
+    }
+
+
+
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Basic Styling */
+body {
+    max-width: 100%; /* Changed from 1140px to prevent overflow */
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    font-family: "Inter", sans-serif;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 50px; /* Reduced margin for smaller screens */
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 20px; /* Adjusted margin to avoid overflow */
+}
+
+nav ul a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Header */
+.fit {
+    color: #E6533C;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.primary-button, .primary-buttonn {
+    background-color: #E6533C;
+    color: #FFFFFF;
+    height: 40px;
+    width: 110px;
+    border-radius: 50px;
+    border: none;
+}
+
+.primary-buttonn{
+    background-color: #222222;
+    border: 1px solid gray;
+}
+
+/* Section Styling */
+.pre-title {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #222222;
+    padding: 50px 0;
+    padding-left: 14rem;
+    background-image: linear-gradient(#1B1B1B,#222222, #090909)
+    
+}
+
+#title {
+    font-size: 3rem;
+}
+
+.first-para {
+    width: 50%;
+}
+
+.first-img {
+    width: 50%;
+    
+}
+
+.opa {
+    opacity: 0.3;
+}
+
+/* Motivation Section */
+.motiv {
+    text-align: center;
+    margin: 8em 0;
+}
+
+.head {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    /* font-weight: 900; */
+}
+
+/* Grid Section */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.grid-container img {
+    border-radius: 50%;
+}
+
+/* Run Section */
+.run {
+    background-color: #222222;
+    border-radius: 2rem;
+    max-width: 100%; /* Changed to avoid overflow */
+    margin: 0 auto;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+.run img {
+    border-radius: 2em;
+    
+}
+
+.running{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+
+.nio{
+    text-align: justify;
+    padding-bottom: 2rem;
+}
+
+.side {
+    max-width: 100%; /* Ensure it doesn't exceed the viewport */
+    padding: 0 1rem; /* Adjust padding to avoid overflow */
+}
+
+/* Simple Section */
+.simple {
+    text-align: center;
+    padding: 5em 1em; /* Added padding for small screens */
+}
+.hum{
+    padding-bottom: 1.5rem;
+}
+/* Flexi Section */
+.flexi {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #191919;
+    padding: 3em 1em;
+    box-sizing: border-box;
+}
+
+.tab table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #393939;
+}
+
+.tab table th, .tab table td {
+    padding: 15px;
+    text-align: center;
+}
+
+/* Meet Our Team Section */
+.hello {
+    text-align: center;
+    margin: 5em 0;
+}
+
+.grid-contain{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* gap: 0.em; */
+    background-color: #1A1A1A;
+    margin-bottom: 3em;
+}
+
+.grid-contain img {
+    height: 19em;
+    width: 100%;
+    border-radius: 1em;
+}
+
+/* Footer */
+.foot {
+    width: 100%;
+    background-color: #1A1A1A;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 6em 1em;
+    box-sizing: border-box; /* Prevents overflow due to padding */
+}
+
+.foot h1 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.foot ol {
+    list-style: none;
+    opacity: 0.4;
+}
+
+.foot hr {
+    opacity: 0.2;
+    margin: 2em 0;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 576px) {
+    /* Navigation */
+    nav ul {
+        display: none;
+    }
+    
+    /* Pre-title Section */
+    .pre-title {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .first-para, .first-img {
+        width: 100%;
+    }
+    
+    /* Grid Section */
+    .grid-container {
+        grid-template-columns:repeat(1,1fr);
+    }
+
+    /* Run Section */
+    .run {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+    
+    /* Meet Our Team Section */
+    .grid-contain {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Footer */
+    .foot {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .pre-title{
+        padding-left: 0rem;
+    }
+    .flexi{
+        display: flex;
+        flex-direction: column;
+    }
+    /* .foot{
+        padding-left: 0px;
+    } */
+}
+
+/* tranning titlle */
+.train-title{
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1rem;
+}
+
+/* tranning desec */
+.desopaciity{
+    text-align:justify;
+    opacity: 0.4;
+}
+.grid-contain img{
+    height: 19em;
+    width: 23em;
+    border-radius: 1em;
+    /* background-image: linear-gradient(to bottom right, red, yellow); */
+}
+
+form input{
+    background-color: #393939;
+    border: none;
+    padding-bottom: 1px;
+    
+}
+.in{
+    width: 21.5rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+}
+.out{
+    height: 2rem;
+    border-radius: 0.5rem;
+}
