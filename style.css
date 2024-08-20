@@ -504,3 +504,18 @@ form input{
 .run button{
     margin-bottom: 1rem;
 }
+
+
+/* text-over image */
+.grid-contain{
+    position: relative;
+}
+
+.banner-text{
+    position: absolute;
+    top: 15rem;
+    padding-left: 1rem;
+}
+.opaa{
+    opacity: 0.6;
+}
