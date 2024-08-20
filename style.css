@@ -1,3 +1,4 @@
+/* Resetting some basic styles to prevent overflow */
 * {
     box-sizing: border-box;
     margin: 0 auto;
@@ -35,14 +36,17 @@
       font-weight: 700;
       font-style: normal;
     }
+
+
+
 html, body {
     width: 100%;
-    overflow-x: hidden; 
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Basic Styling */
 body {
-    max-width: 100%; 
+    max-width: 100%; /* Changed from 1140px to prevent overflow */
     margin: 0 auto;
     background-color: black;
     color: white;
@@ -54,7 +58,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 50px; 
+    margin: 20px 50px; /* Reduced margin for smaller screens */
 }
 
 nav ul {
@@ -64,7 +68,7 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 20px; 
+    margin-right: 20px; /* Adjusted margin to avoid overflow */
 }
 
 nav ul a {
@@ -132,6 +136,7 @@ nav ul a {
 .head {
     font-size: 3rem;
     padding-bottom: 1rem;
+    /* font-weight: 900; */
 }
 
 /* Grid Section */
@@ -149,7 +154,7 @@ nav ul a {
 .run {
     background-color: #222222;
     border-radius: 2rem;
-    max-width: 100%; 
+    max-width: 100%; /* Changed to avoid overflow */
     margin: 0 auto;
     padding: 2em;
     display: flex;
@@ -161,6 +166,7 @@ nav ul a {
     border-radius: 2em;
     
 }
+
 .running{
     font-size: 2rem;
     padding-bottom: 1rem;
@@ -172,13 +178,14 @@ nav ul a {
 }
 
 .side {
-    max-width: 100%; 
-    padding: 0 1rem; 
+    max-width: 100%; /* Ensure it doesn't exceed the viewport */
+    padding: 0 1rem; /* Adjust padding to avoid overflow */
+}
 
 /* Simple Section */
 .simple {
     text-align: center;
-    padding: 5em 1em; 
+    padding: 5em 1em; /* Added padding for small screens */
 }
 .hum{
     padding-bottom: 1.5rem;
@@ -213,6 +220,7 @@ nav ul a {
 .grid-contain{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    /* gap: 0.em; */
     background-color: #1A1A1A;
     margin-bottom: 3em;
 }
@@ -230,7 +238,7 @@ nav ul a {
     display: flex;
     justify-content: space-evenly;
     padding: 6em 1em;
-    box-sizing: border-box; 
+    box-sizing: border-box; /* Prevents overflow due to padding */
 }
 
 .foot h1 {
@@ -307,6 +315,9 @@ nav ul a {
         padding-left: 3rem;
     }
 }
+
+
+
 
 /*  boro screeen er jonno */
 @media screen and (min-width: 992px) {
@@ -443,16 +454,21 @@ form input{
     height: 2rem;
     border-radius: 0.5rem;
 }
+
+
 /* cantact us */
 .contactus{
     height: 15rem;
     width: 100%;
-    background-color: #393939;   
+    background-color: #393939;
+    
+    
 }
 
 .contactus:hover{
     background-color: brown;
     box-shadow: inset;
+    /* transform: skewY(2deg); */
     transform: scaleY(1.1);
     transition-duration: 1s;
 }
@@ -488,6 +504,8 @@ form input{
 .run button{
     margin-bottom: 1rem;
 }
+
+
 /* text-over image */
 .grid-contain{
     position: relative;
@@ -506,4 +524,6 @@ form input{
 .opaa{
     opacity: 0.6;
 }
-
+.banner-textt {
+ border: 1px solid gray;
+}
