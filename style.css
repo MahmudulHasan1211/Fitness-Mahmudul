@@ -90,6 +90,7 @@ nav ul a {
     width: 110px;
     border-radius: 50px;
     border: none;
+    margin-bottom: 1rem;
 }
 
 .primary-buttonn{
@@ -305,6 +306,11 @@ nav ul a {
     /* .foot{
         padding-left: 0px;
     } */
+
+    /* .lastc{
+        flex-direction: column;
+    } */
+    
 }
 
 /* tranning titlle */
@@ -340,4 +346,50 @@ form input{
 .out{
     height: 2rem;
     border-radius: 0.5rem;
+}
+
+
+/* cantact us */
+.contactus{
+    height: 15rem;
+    width: 100%;
+    background-color: #393939;
+    
+    
+}
+
+.contactus:hover{
+    background-color: brown;
+    box-shadow: inset;
+    /* transform: skewY(2deg); */
+    transform: scaleY(1.1);
+    transition-duration: 1s;
+}
+
+.contactus form input{
+    background-color: white;
+    height:1rem;
+    width: 18rem;
+    padding-left: 8rem;
+
+}
+
+.contactus button{
+    height: 2rem;
+    width: 5rem;
+    text-align: center;
+    margin-left:13%;
+    margin-bottom: 1rem;
+    
+}
+
+.contactus h2{
+    color: #E6533C;
+}
+.lastc{
+    display: flex;
+}
+
+.lastc p{
+    color: tomato;
 }
