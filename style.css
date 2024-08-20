@@ -90,7 +90,7 @@ nav ul a {
     width: 110px;
     border-radius: 50px;
     border: none;
-    margin-bottom: 1rem;
+    
 }
 
 .primary-buttonn{
@@ -168,7 +168,7 @@ nav ul a {
 }
 
 .running{
-    font-size: 3rem;
+    font-size: 2rem;
     padding-bottom: 1rem;
 }
 
@@ -310,9 +310,116 @@ nav ul a {
     /* .lastc{
         flex-direction: column;
     } */
-    
+    .hasan{
+        margin-top: 1rem;
+        padding-left: 3rem;
+    }
 }
 
+
+
+
+/*  boro screeen er jonno */
+@media screen and (min-width: 992px) {
+    
+    nav {
+        margin: 20px 100px; 
+    }
+
+    /* Pre-title Section */
+    .pre-title {
+        padding-left: 18rem; 
+    }
+
+    #title {
+        font-size: 3.5rem; 
+    }
+
+    .first-para {
+        width: 45%; 
+    }
+
+    .first-img {
+        width: 45%; 
+    }
+
+    /* Motivation Section */
+    .motiv {
+        margin: 10em 0; 
+    }
+
+    .head {
+        font-size: 3.5rem; 
+    }
+
+    /* Grid Section */
+    .grid-container {
+        gap: 2rem; 
+    }
+
+    .train-title {
+        font-size: 1.25rem; 
+    }
+
+    .desopaciity {
+        font-size: 1rem; 
+    }
+
+    /* Run Section */
+    .run {
+        padding: 4em; 
+        margin-top: 6rem; 
+    }
+
+    .running {
+        font-size: 3.5rem; 
+    }
+
+    .side {
+        padding: 0 2rem; 
+    }
+
+    .ri img {
+        max-width: 100%; 
+    }
+
+    /* Flexi Section */
+    .flexi {
+        padding: 4em 2em; 
+        gap: 3rem; 
+    }
+
+    .tab {
+        width: 45%; 
+    }
+
+    .tab table th, .tab table td {
+        font-size: 1rem; 
+    }
+
+    form input.in {
+        width: 23rem; 
+    }
+
+    /* Meet Our Team Section */
+    .grid-contain {
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 2rem; 
+    }
+
+    .grid-contain img {
+        height: 22em; 
+    }
+
+    /* Footer */
+    .foot {
+        padding: 8em 2em; 
+    }
+
+    .foot h1 {
+        font-size: 1.75em;
+    }
+}
 /* tranning titlle */
 .train-title{
     text-align: center;
@@ -392,4 +499,8 @@ form input{
 
 .lastc p{
     color: tomato;
+}
+
+.run button{
+    margin-bottom: 1rem;
 }
