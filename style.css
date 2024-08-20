@@ -516,6 +516,12 @@ form input{
     top: 15rem;
     padding-left: 1rem;
 }
+.banner-textt{
+    position: absolute;
+    top: 15rem;
+    margin-left: 10rem;
+}
 .opaa{
     opacity: 0.6;
 }
+
